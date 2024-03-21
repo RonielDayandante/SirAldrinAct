@@ -1,0 +1,11 @@
+This line of code is a SQL query that retrieves specific columns (student_Name, age, course) from two tables (student_info and student_list) using an inner join based on a common column (student_ID in student_info table and student_info in student_list table). Let's break it down step by step:
+
+1. SELECT student_Name, age, course: This part of the query specifies the columns that should be retrieved from the tables. In this case, it wants to fetch the student_Name, age, and course columns.
+
+2. FROM student_info: This part specifies the first table from which the data will be retrieved. In this case, it specifies the student_info table.
+
+3. INNER JOIN student_list: This part indicates that an inner join operation should be performed with the student_list table. An inner join combines rows from both tables based on a common column, which is specified next.
+
+4. ON student_info.student_ID = student_list.student_info: This part specifies the condition under which the two tables will be joined. It specifies that the student_ID column in the student_info table should match the student_info column in the student_list table.
+
+When this query is executed, it will retrieve the student_Name, age, and course columns from the student_info and student_list tables, respectively, where the student_ID in student_info matches the student_info in student_list. The result will be a combined table with the specified columns selected based on the join condition.
